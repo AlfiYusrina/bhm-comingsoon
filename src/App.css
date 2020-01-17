@@ -1,3 +1,20 @@
+@font-face{
+  font-family: GT-Eesti-Pro-Text-Bold;
+  src: url("./GT-Eesti-Pro-Text-Bold-2.woff") format('woff');
+}
+.social-item {
+  color: white;
+  padding: 10px;
+}
+.fb {
+  font-size: 1em;
+}
+.ig {
+  font-size: 1.1em;
+}
+.social-item:hover{
+  color: #F9D31D;
+}
 .App {
   text-align: center;
 }
@@ -7,14 +24,12 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: black;
+  animation: changingbackground 8s linear 1s infinite;
 }
 
-.App-header {
-  background-color: #282c34;
+.header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +39,27 @@
   color: white;
 }
 
+h1{
+  color: white;
+  text-transform: uppercase;
+  font-family: GT-Eesti-Pro-Text-Bold;
+}
+
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+  background-color: black;
+  padding: 100px;
+}
+@keyframes changingbackground {
+  0% { background-color: #000000; }
+  12.5% { background-color: #F04E29; }
+  25% { background-color: #F498C0; }
+  37.5% { background-color: #187038}
+  50% { background-color: #F9D31D; }
+  62.5% { background-color: #0558A8; }
+  75% { background-color: #C02F2D; }
+  89.5% { background-color: #A18BBF; }
+  100% { background-color: #F498C0; }
 }
