@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './bhm-logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
 import { faInstagram, faFacebookF} from '@fortawesome/free-brands-svg-icons'
